@@ -1,0 +1,25 @@
+#version: '3.7'
+#
+#services:
+#  web:
+#    build: .
+#    ports:
+#      - "443:443"
+#
+#    networks:
+#      docker_mlops-net:
+#        ipv4_address: 172.18.0.12
+#
+#networks:
+#  docker_mlops-net:
+#    external: true
+
+version: '3.7'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1080:1080"

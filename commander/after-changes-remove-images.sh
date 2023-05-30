@@ -1,0 +1,1 @@
+docker rmi ngnix-continer-nginx
